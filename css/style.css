@@ -1,0 +1,94 @@
+:root {
+    --bg: #FBE1DF;
+    --envelop-bg: #CB6A6C;
+    --left-triangle: #F9AC9D;
+    --right-triangle: #F49790;
+    --white: #FFFFFF;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* center div */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    min-height: 100vh;
+    min-height: 100svh;
+    background-color: var(--bg);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img, video, svg, picture {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em 2em;
+
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.gif {
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 3em;
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.button {
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+#yesBtn {
+    /* max-width: 168px; */
+    background-color: green;
+    margin: auto;
+}
+
+#yesBtn.enlarge {
+    transform: scale(1.5);
+}
+
+#noBtn {
+    background-color: rgb(255, 0, 0);
+}
+
+#noBtn.shrink {
+    transform: scale(0.8);
+}
+
+#goBack {
+    text-decoration: underline;
+    font-size: 1rem;
+    color: blue;
+}
